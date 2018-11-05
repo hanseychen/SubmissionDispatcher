@@ -37,4 +37,7 @@ def dispatch(path):
 
 
 if __name__ == '__main__':
-    dispatch(sys.argv[1])
+    if len(sys.argv) is not 2:
+        print("Usage: python Dispatcher.py <submission-folder>");
+    else:
+        dispatch(sys.argv[1])
